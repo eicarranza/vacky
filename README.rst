@@ -1,7 +1,22 @@
 vacky
 =====
 
-This is a cattle management system built in Django. 
+Vacky is a livestock management system built in Django.  This project was born as a need to manage the information of some cattle farms of the family, which to date is being done manually, writing all the data in physical notebooks. 
+
+In order to improve the management of information and put into practice the knowledge acquired as a FullStack developer, this system is created which involves:
+
+- Backend supported in Python Django. 
+- Front End using HTML, Bootstrap
+- Mobile app: React Native
+
+This project will also employ technologies such as:
+
+- Docker Container
+- Docker Compose
+- Django API Rest
+- Cloud Infrastructure
+
+Vacky is built from Django Cookiecutter, in order to apply the features it offers, such as 12-factor, test coverage, containers via docker, among others.  All the information related to coockiecutter Django can be consulted [following this link](https://github.com/cookiecutter/cookiecutter-django "following this link"). 
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
      :target: https://github.com/pydanny/cookiecutter-django/
