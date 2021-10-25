@@ -16,7 +16,7 @@ This project will also employ technologies such as:
 - Django API Rest
 - Cloud Infrastructure
 
-Vacky is built from Django Cookiecutter, in order to apply the features it offers, such as 12-factor, test coverage, containers via docker, among others.  All the information related to coockiecutter Django can be consulted [following this link](https://github.com/cookiecutter/cookiecutter-django "following this link"). 
+Vacky is built from Django Cookiecutter, in order to apply the features it offers, such as 12-factor, test coverage, containers via docker, among others.  All the information related to coockiecutter Django can be consulted https://github.com/cookiecutter/cookiecutter-django 
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
      :target: https://github.com/pydanny/cookiecutter-django/
