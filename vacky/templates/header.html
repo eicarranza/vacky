@@ -1,0 +1,28 @@
+{% load static i18n %}
+
+<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="{% url 'home' %}">Company name</a>
+<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+{% if request.user.is_authenticated %}
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <div class="navbar-nav">
+        <div class="nav-item text-nowrap">    
+            {# URL provided by django-allauth/account/urls.py #}
+            <a class="nav-link px-3" href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a>
+                
+        </div>
+    </div>
+{% else %}
+    {# URL provided by django-allauth/account/urls.py #}
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            {# URL provided by django-allauth/account/urls.py #}
+            <a id="sign-up-link" class="nav-link" href="{% url 'account_signup' %}">{% translate "Sign Up" %}</a>
+        </li>
+        <li class="nav-item">
+            {# URL provided by django-allauth/account/urls.py #}
+            <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% translate "Sign In" %}</a>    
+        </li>
+      </ul>
+{% endif %}
